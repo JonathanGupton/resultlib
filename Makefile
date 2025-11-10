@@ -3,8 +3,8 @@
 install:
 	pip install -r dev-requirements.txt
 
-test:
-	pytest -q
+test: install
+	pytest -v
 
 type:
 	mypy
